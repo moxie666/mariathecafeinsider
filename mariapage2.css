@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.nav{width: 100%;
+  overflow: auto;}
+.nav a{float: left;
+  padding:0px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; 
+  text-align: center; 
+}
+
+.footer{width: 100%;
+  overflow: auto;}
+.footer a{float: left;
+  padding:0px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+	text-align: center; }
+
+.cafes{height:700px}
+
+.gallery {
+    display: grid;
+
+	grid-gap: 5px; height: 2471px;width:1430px; }
+
+	.gallery:hover.overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+	object-fit: cover;}
+
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+	grid-row-end: 6;}
+
+.gallery__item--1:hover .overlay {
+	opacity: 1;}
+
+.gallery__item--2 {
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 1;
+	grid-row-end: 6;}
+
+.gallery__item--2:hover .overlay {
+	opacity: 1;}
+
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 6;
+	grid-row-end: 12;}
+
+.gallery__item--3:hover .overlay {
+	opacity: 1;}
+
+
+.gallery__item--4 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 6;
+	grid-row-end: 12;}
+
+.gallery__item--4:hover .overlay {
+	opacity: 1;}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 12;
+	grid-row-end:16;}
+
+.gallery__item--5:hover .overlay {
+	opacity: 1;}
+
+.gallery__item--6 {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 12;
+	grid-row-end:16;}
+
+.gallery__item--6:hover .overlay {
+	opacity: 1;}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FBF2F3;
+}
+
+
+
+.figure.hover-caption-display { 	
+	position: relative;
+	overflow: hidden; 
+}
+.figure.hover-caption-display > .figcaption { 
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	height: 30px;
+	line-height: 30px;
+	bottom: -60px;
+	text-align: center;
+	background: rgba( 256,256,256,.8 ); 
+	color: #000; 
+	transition: bottom 500ms;}
+.figure.hover-caption-display:hover > .figcaption {
+	bottom: 40%;
+	transition: bottom 500ms; }
+
